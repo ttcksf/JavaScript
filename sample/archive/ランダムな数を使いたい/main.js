@@ -15,3 +15,7 @@ function onClickButton(){
     rectangle.style.setProperty('--start', randomColorStart);
     rectangle.style.setProperty('--end', randomColorEnd);
 }
+
+//ランダムな数字を生成
+const randomArray1 = crypto.getRandomValues(new Uint16Array(10)).join('');
+console.log(randomArray1);
